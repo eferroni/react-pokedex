@@ -31,11 +31,13 @@ Use the defaultProps feature of Pokecard to provide a default list of Pokemon ch
 ]
 ```
 
-For each pokemon, their image source should be: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png.
+For each pokemon, their image source should be:
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png.
 
 Further Study
 Fancier Images
-Use this alternate source for nicer looking images: https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png
+Use this alternate source for nicer looking images:
+https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png
 
 Note that the pokemon id for these images must be padded with zeros to three places, like: 001, 002, 034, 199, etc. Try writing a function to take an id like 4 and turn it into 004.
 
