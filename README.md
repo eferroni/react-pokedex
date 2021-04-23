@@ -7,15 +7,15 @@ _images/pokedex.png
 Part 1: Building Components
 To create the pokedex, you should use 3 components:
 
-####App
+#### App
 This should just render a single Pokedex.
 
 (It’s common for the top-level app to not have direct logic in it, but to render the top application object — this becomes useful when you build sites that compose several different parts together.)
 
-####Pokecard
+#### Pokecard
 Shows a single Pokemon, with their name, image, and type.
 
-####Pokedex
+#### Pokedex
 Is provided, via props, an array of objects describing different pokemon, and renders a series of Pokecard components.
 Use the defaultProps feature of Pokecard to provide a default list of Pokemon characters to show. You can use this list for a good set of defaults:
 
@@ -37,7 +37,7 @@ Use this alternate source for nicer looking images: https://assets.pokemon.com/a
 
 Note that the pokemon id for these images must be padded with zeros to three places, like: 001, 002, 034, 199, etc. Try writing a function to take an id like 4 and turn it into 004.
 
-####Pokegame Component
+#### Pokegame Component
 Modify your component hierarchy so that App renders a component called Pokegame. Pokegame should take your list of 8 pokemon and randomly assign them into two hands of 4 cards each. It should then render two Pokedex components, one for each hand.
 
 Once you’ve got this working, modify your Pokegame so that it also calculates the total experience for each hand of pokemon. It should pass this total to the Pokedex.
@@ -46,5 +46,5 @@ Next, have the Pokegame component determine which hand is the “winner,” wher
 
 Now when you load the page, you should see two different hands with a randomly changing winner every time you refresh.
 
-####Styling
+#### Styling
 Add styling to your components — perhaps you can do interesting things when hovering over a Pokecard, or have them smoothly transition into the page, all via CSS?
