@@ -1,0 +1,29 @@
+.Pokedex{
+  width: 60%;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0px;
+}
+.Pokedex-total{
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.Pokedex-winner{
+  background-color: #ebffeb;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.Pokedex-loser{
+  background-color: #ffebeb;
+}
+@keyframes color {
+  0% {
+    background-color: #009d00;
+  }
+  50% {
+    background-color: #00c400;
+  }
+}

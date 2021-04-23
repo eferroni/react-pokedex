@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import {hand1,hand2,hand1Exp,hand2Exp} from './Pokegame'
+import Pokecard from './Pokecard'
+import Pokedex from './Pokedex'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Pokedex hand={hand1} total={hand1Exp}/>
+    X
+    <Pokedex hand={hand2} total={hand2Exp}/>
     </div>
   );
 }
