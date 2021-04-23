@@ -1,10 +1,9 @@
 # React Props: Pokedex
 This exercise lets you pratice using React components and properties.
 
-Create a pokemon application (a “pokedex”) that displays an interface that looks like this:
+Create a pokemon application (a “pokedex”) that displays an interface.
 
-_images/pokedex.png
-Part 1: Building Components
+### Part 1: Building Components
 To create the pokedex, you should use 3 components:
 
 #### App
@@ -19,6 +18,7 @@ Shows a single Pokemon, with their name, image, and type.
 Is provided, via props, an array of objects describing different pokemon, and renders a series of Pokecard components.
 Use the defaultProps feature of Pokecard to provide a default list of Pokemon characters to show. You can use this list for a good set of defaults:
 
+```bash
 [
   {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
   {id: 7, name: 'Squirtle', type: 'water', base_experience: 63},
@@ -29,6 +29,8 @@ Use the defaultProps feature of Pokecard to provide a default list of Pokemon ch
   {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
   {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
 ]
+```
+
 For each pokemon, their image source should be: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png.
 
 Further Study
